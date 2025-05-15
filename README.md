@@ -45,3 +45,5 @@ You’ll see:
 Welcome! I'm your AI assistant. Type 'quit' to exit.
 How can I assist you today?
 ```
+## 📄 License
+MIT License. Feel free to fork, use, and build upon it.
