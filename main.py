@@ -12,6 +12,12 @@ def claculator(a: float, b: float) -> str:
     print("Tool has been called.")
     return f"The sum of {a} and {b} is {a+b}"
 
+@tool
+def say_hello(name: str) -> str:
+    """Useful for greet"""
+    print("Tool has been called.")
+    return f"Hello {name}, How can I help you {name}?"
+
 def main():
     model = ChatOpenAI(temperature=0)
 
