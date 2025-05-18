@@ -6,6 +6,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+@tool
+def claculator(a: float, b: float) -> str:
+    """Useful for performing basic calculations with numbers"""
+    return f"The sum of {a} and {b} is {a+b}"
+
 def main():
     model = ChatOpenAI(temperature=0)
 
