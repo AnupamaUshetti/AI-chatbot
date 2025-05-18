@@ -9,12 +9,13 @@ load_dotenv()
 @tool
 def claculator(a: float, b: float) -> str:
     """Useful for performing basic calculations with numbers"""
+    print("Tool has been called.")
     return f"The sum of {a} and {b} is {a+b}"
 
 def main():
     model = ChatOpenAI(temperature=0)
 
-    tools = []
+    tools = [claculator]
     agent_executor = create_react_agent(model, tools)
 
     print("Wecome! I'm your AI assistant. Type 'quit' to exit.")
